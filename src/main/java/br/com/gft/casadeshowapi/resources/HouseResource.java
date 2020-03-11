@@ -38,7 +38,7 @@ public class HouseResource {
 	
 	@ApiOperation("Listar todas as casas de show.")
 	@GetMapping
-	public ResponseEntity <Page<House>> lista(@PageableDefault(sort="id", direction = Direction.DESC, page = 0, size = 4) Pageable paginacao){
+	public ResponseEntity <Page<House>> lista(@PageableDefault(sort="id", direction = Direction.ASC, page = 0, size = 4) Pageable paginacao){
 		
 		Page<House> casa = houseService.listar(paginacao);
 		return ResponseEntity.status(HttpStatus.OK).body(casa);
