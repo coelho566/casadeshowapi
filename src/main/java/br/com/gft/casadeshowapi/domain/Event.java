@@ -42,9 +42,6 @@ public class Event {
 	@Enumerated(EnumType.STRING)
 	private MusicCategory category;
 	
-	@NotNull
-	private String foto;
-
 	@ManyToOne
 	@OnDelete(action = OnDeleteAction.CASCADE)
 	private House houseShow;
@@ -105,13 +102,6 @@ public class Event {
 		this.houseShow = houseShow;
 	}
 
-	public String getFoto() {
-		return foto;
-	}
-
-	public void setFoto(String foto) {
-		this.foto = foto;
-	}
 
 	@Override
 	public int hashCode() {

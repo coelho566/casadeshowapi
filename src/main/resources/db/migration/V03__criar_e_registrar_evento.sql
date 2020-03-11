@@ -3,7 +3,6 @@ CREATE TABLE `event` (
   `capacity` int NOT NULL,
   `category` varchar(255) DEFAULT NULL,
   `date_event` date NOT NULL,
-  `foto` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `preco` decimal(19,2) NOT NULL,
   `house_show_id` bigint DEFAULT NULL,
