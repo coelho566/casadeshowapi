@@ -7,6 +7,5 @@ import br.com.gft.casadeshowapi.domain.Event;
 
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
-	
 	Event findByName(String name);	
 }
