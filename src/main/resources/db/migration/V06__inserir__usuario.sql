@@ -1,2 +1,0 @@
-INSERT INTO `casadeshowapi`.`user` (`email`, `password`, `roles`, `username`) VALUES ('admin@gmail.com', 'admin', 'ADMIN', 'admin');
-INSERT INTO `casadeshowapi`.`user` (`email`, `password`, `roles`, `username`) VALUES ('user@gmail.com', 'user', 'USER', 'user');
