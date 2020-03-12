@@ -51,7 +51,7 @@ public class HouseResource {
 			@ApiParam(name = "Corpo", value = "Representação de uma nova casa de show") @Valid @RequestBody House house) {
 
 		house = houseService.salvar(house);
-		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{id}").buildAndExpand(house.getId()).toUri();
+		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(house.getId()).toUri();
 
 		return ResponseEntity.created(uri).build();
 

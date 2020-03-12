@@ -8,3 +8,5 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 
+INSERT INTO `casadeshowapi`.`user` (`email`, `password`, `roles`, `username`) VALUES ('admin@gmail.com', 'admin', 'ADMIN', 'admin');
+INSERT INTO `casadeshowapi`.`user` (`email`, `password`, `roles`, `username`) VALUES ('user@gmail.com', 'user', 'USER', 'user');
